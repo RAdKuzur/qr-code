@@ -4,4 +4,7 @@
 2. docker-compose exec php bash
 3. composer install
 4. php yii migrate
-5. Затем перейти по ссылке : http://localhost:8000/link/index или открыть страницу проекта через Docker Desktop
+5. при необходимости написать в bash:
+  chown -R www-data:www-data /app/web/assets
+  chmod -R 775 /app/web/assets
+6. Затем перейти по ссылке : http://localhost:8000/link/index или открыть страницу проекта через Docker Desktop
